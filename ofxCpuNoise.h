@@ -12,7 +12,7 @@ struct ofxCpuNoise {
 		height = h;
 	}
 	
-	inline void update(float velocity) {
+	void update(float velocity) {
 		ofPixels& pix = img.getPixels();
 		for(int y=0; y<height; y++) {
 			for(int  x=0; x<width; x++) {
